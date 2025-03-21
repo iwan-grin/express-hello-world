@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
-app.get("/test", (req, res) => res.type('html').send(process.env.PORT));
+app.get("/test", (req, res) => res.type('html').send(process.env.SECRET));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
